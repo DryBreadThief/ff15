@@ -26,7 +26,7 @@ import { FileNotFound } from './file-not-found/file-not-found';
   styleUrl: './app.scss'
 })
 export class App implements OnInit{
-  protected readonly title = signal('ff15');
+  protected readonly title = signal('PlatePlaza');
 
   ngOnInit(): void {
     initFlowbite();

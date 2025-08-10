@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ff15": {
+    "PlatePlaza": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -83,10 +83,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ff15:build:production"
+              "buildTarget": "PlatePlaza:build:production"
             },
             "development": {
-              "buildTarget": "ff15:build:development"
+              "buildTarget": "PlatePlaza:build:development"
             }
           },
           "defaultConfiguration": "development"
