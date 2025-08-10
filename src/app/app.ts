@@ -1,11 +1,14 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { initFlowbite } from 'flowbite';
 import { Home } from './home/home';
 import { CommonModule } from '@angular/common';
 import { Navbar } from './navbar/navbar';
 import { Footer } from './footer/footer';
+import { FileNotFound } from './file-not-found/file-not-found';
 
-import { initFlowbite } from 'flowbite';
+
+
 
 @Component({
   selector: 'app-root',
@@ -15,6 +18,8 @@ import { initFlowbite } from 'flowbite';
     CommonModule,
     Navbar,
     Footer,
+    FileNotFound,
+    RouterLink,
     
   ],
   templateUrl: './app.html',

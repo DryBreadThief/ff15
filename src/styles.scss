@@ -1,7 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @import "flowbite/src/themes/default";
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+
+body{
+    padding-top: 4rem;
+
+    background: linear-gradient(
+    to bottom,
+    #87CEEB,
+    #87CEEB,
+    #CBE7F5,
+    #7E7E7E 30%,
+    #7E7E7E 80%,
+    #7B5E3B 100%,
+  );
+}
+
+@theme {
+    --color-ground: #7B5E3B;
+    --color-sky: #87CEEB;
+    --color-sun: #FFD93B;
+    --color-street: #7E7E7E;
+    --color-cloud: #D9E2EC;
+}
+
+span {
+  @apply self-center text-2xl font-semibold whitespace-nowrap dark:text-white;
+}
